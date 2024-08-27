@@ -303,7 +303,7 @@ WIDTH = disp.width
 HEIGHT = disp.height
 
 # The city and timezone that you want to display.
-city_name = "Stuttgart"
+city_name = "Berlin"
 time_zone = "Europe/Berlin"
 
 # Values that alter the look of the background
