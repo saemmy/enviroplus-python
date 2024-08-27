@@ -251,15 +251,15 @@ def analyse_pressure(pressure, t):
 def describe_pressure(pressure):
     """Convert pressure into barometer-type description."""
     if pressure < 970:
-        description = "storm"
+        description = "Sturm"
     elif 970 <= pressure < 990:
-        description = "rain"
+        description = "Regen"
     elif 990 <= pressure < 1010:
-        description = "change"
+        description = "Veränderlich"
     elif 1010 <= pressure < 1030:
-        description = "fair"
+        description = "Schön"
     elif pressure >= 1030:
-        description = "dry"
+        description = "Trocken"
     else:
         description = ""
     return description
@@ -268,22 +268,22 @@ def describe_pressure(pressure):
 def describe_humidity(humidity):
     """Convert relative humidity into good/bad description."""
     if 40 < humidity < 60:
-        description = "good"
+        description = "gut"
     else:
-        description = "bad"
+        description = "schlecht"
     return description
 
 
 def describe_light(light):
     """Convert light level in lux to descriptive value."""
     if light < 50:
-        description = "dark"
+        description = "dunkel"
     elif 50 <= light < 100:
-        description = "dim"
+        description = "dämmrig"
     elif 100 <= light < 500:
-        description = "light"
+        description = "hell"
     elif light >= 500:
-        description = "bright"
+        description = "strahlend"
     return description
 
 
